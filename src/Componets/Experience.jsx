@@ -6,7 +6,7 @@ export const Experience = () => {
             <Element name='/experience' />
             <main className='experience-container' id="/experience">
                 <div className='experience-content-container'>
-                    <h1 className="titulo-main">Tres años haciendo lo que amo</h1>
+                    <h1 className="titulo-main">Haciendo lo que amo</h1>
                     <div className="experience-flex-container">
                     <div>
 

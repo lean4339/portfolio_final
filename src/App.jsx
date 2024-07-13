@@ -6,17 +6,20 @@ import { Contact } from './Componets/Contact'
 import { About } from './Componets/About'
 import { Experience } from './Componets/Experience'
 import { Services } from './Componets/Services'
+import { Container } from '@mui/material'
 function App() {
 
   return (
     <>
     <Header />
+    <Container sx={{display:'flex', flexDirection:'column',  justifyContent:'center', flexWrap: 'wrap', overflow:'hidden', gap:10 }} fixed maxWidth='xl'>
     <Main />
     <About />
     <Experience />
     <Services />
     <Contact />
     <Conexion />
+    </Container>
     </>
   )
 }

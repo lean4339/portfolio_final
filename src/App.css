@@ -45,6 +45,7 @@ body {
     flex-direction: column;
     padding: 30px 20px;
     background-color: white;
+    height: 100vh;
 }
 .title-form-container{
     color: #212529;
@@ -104,7 +105,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,7 +126,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 170vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,8 +147,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 100px;
-    height: 150vh;
     display: flex;
     align-items: space-around;
     justify-content: space-around;
@@ -161,8 +158,16 @@ body {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    height: 100%;
     opacity: 1000;
+}
+.services-text-container{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: none;
+    width: 300px;
+    padding: 3px 2px;
 }
 .services-img{
     width: 300px;
@@ -305,14 +310,10 @@ body {
 
 @keyframes upgradeMenu {
     from {
-        height: 100px;
-        background-color: white;
         opacity: 0;
     }
 
     to {
-        height: 250px;
-        background-color:#1976D2;
         opacity: 1;
     }
 }
@@ -333,9 +334,7 @@ body {
 }
 
 
-.go-back-menu {
-    animation: downMenu 0.2s forwards;
-  }
+
 
 @media (min-width:1200px) {
 
@@ -430,7 +429,6 @@ body {
     background-color: white;
 }
 .experience-container{
-    height: 130vh;
 }
 .experience-text-container{
     display: flex;
@@ -440,6 +438,17 @@ body {
     width: 300px;
     height: 300px;
     padding: 3px 10px;
+}
+.services-text-container{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: none;
+    width: 300px;
+    height: 300px;
+    padding: 3px 10px;
+
 }
 .experience-flex-container{
     display: flex;
@@ -453,7 +462,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 120vh;
     display: flex;
     align-items: center;
     justify-content: center;
