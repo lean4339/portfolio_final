@@ -7,10 +7,10 @@ export const Header = () => {
     const [animatedLinks, setAnimatedLinks] = useState('')
     const [animatedMenu, setAnimatedMenu] = useState(false)
     const links = [
-        {id: 2, title: 'About'},
-        {id: 5, title: 'Experience'},
-        {id: 1, title: 'Services'},
-        {id: 4, title: 'Contact'},
+        {id: 2, title: 'Sobre mí'},
+        {id: 5, title: 'Experiencia'},
+        {id: 1, title: 'Servicios'},
+        {id: 4, title: 'Contacto'},
     ]
     const handleShowMenu = () => {
         setShowMenu(!showMenu)

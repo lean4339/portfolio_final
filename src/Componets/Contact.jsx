@@ -54,8 +54,8 @@ export const Contact = () => {
   };
   return (
     <>
-      <Element name='/contact' />
-      <div className='form-container' id='/contact'>
+      <Element name='/contacto' />
+      <div className='form-container' id='/contacto'>
         <div className='title-form-container'>
           <h1 className='title-form'>Contacto</h1>
           <p className='text-form'>Mandame un mail con tu consulta y lo charlamos</p>

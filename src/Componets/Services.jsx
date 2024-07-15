@@ -4,8 +4,8 @@ import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 export const Services = () => {
     return (
         <>
-        <Element name='/services'/>
-        <main className='services-container' id="/services">
+        <Element name='/servicios'/>
+        <main className='services-container' id="/servicios">
             <h1 className="titulo-main">Mostrate al mundo</h1>
             <section className='services'>
             <p>Mostrá tus productos, obras de arte, dibujos o artesanías con una página web hecha a tu medida</p>

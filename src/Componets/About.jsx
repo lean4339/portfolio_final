@@ -2,8 +2,8 @@ import { Element } from "react-scroll"
 export const About = () => {
     return (
         <>
-        <Element name='/about'/>
-        <main className='about-container' id="/about">
+        <Element name='/sobre mí'/>
+        <main className='about-container' id="/sobre mí">
                 <h1 className="titulo-main">Sobre mí</h1>
                 <p className="about-text-container">
                     Soy un desarrollador web full stack, con experiencia en el desarrollo de aplicaciones web. 

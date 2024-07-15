@@ -3,8 +3,8 @@ import { Element } from "react-scroll"
 export const Experience = () => {
     return (
         <>
-            <Element name='/experience' />
-            <main className='experience-container' id="/experience">
+            <Element name='/experiencia' />
+            <main className='experience-container' id="/experiencia">
                     <h1 className="titulo-main">Haciendo lo que amo</h1>
                     <p className="experience-text-container">
                         Comencé mi formación en programación en 2019, dedicando dos horas diarias a estudiar en la Fundación Formar, sumando cuatro horas adicionales de práctica. Durante este tiempo, participé en un proyecto evaluado por Coderhouse, lo cual me permitió afianzar mis conocimientos.
