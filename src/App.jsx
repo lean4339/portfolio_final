@@ -12,7 +12,7 @@ function App() {
   return (
     <>
     <Header />
-    <Container sx={{ display:'flex', flexDirection:'column',  justifyContent:'center', flexWrap: 'wrap' }} fixed maxWidth='xl'>
+    <Container className='bg-animate' sx={{ position:'relative', display:'flex', flexDirection:'column',  justifyContent:'center', flexWrap: 'wrap' }} fixed maxWidth='xl'>
     <Main />
     <About />
     <Experience />
