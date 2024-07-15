@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import TextField from '@mui/material/TextField';
 import { Element } from 'react-scroll';
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -59,26 +58,26 @@ export const Contact = () => {
       <div className='form-container' id='/contact'>
         <div className='title-form-container'>
           <h1 className='title-form'>Contacto</h1>
-          <p className='text-form'>Puedes dejarnos un mensaje</p>
+          <p className='text-form'>Mandame un mail con tu consulta y lo charlamos</p>
         </div>
-        <TextField autoComplete="off" name='name' id='name' onChange={handleChange} type='text' label='Nombre' className='inputs' variant='standard' />
+        <input placeholder='Name' autoComplete="off" name='name' id='name' onChange={handleChange} type='text' label='Nombre' className='inputs'  />
         {error && error.name &&
           <p className='error'>{error.name}</p>
         }
-        <TextField autoComplete="off" name='email' id='email' onChange={handleChange} type='email' label='Email' className='inputs' variant='standard' />
+        <input placeholder='Email' autoComplete="off" name='email' id='email' onChange={handleChange} type='email' label='Email' className='inputs'  />
         {error && error.email &&
           <p className='error'>{error.email}</p>
         }
-        <TextField autoComplete="off" name='telephone' id='telephone' onChange={handleChange} type='tel' label='Teléfono' className='inputs' variant='standard' />
+        <input placeholder='Telephone' autoComplete="off" name='telephone' id='telephone' onChange={handleChange} type='tel' label='Teléfono' className='inputs'  />
         {error && error.telephone &&
           <p className='error'>{error.telephone}</p>
         }
-        <TextField autoComplete="off" name='company' id='company' onChange={handleChange} type='text' label='Empresa (Opcional)' className='inputs' variant='standard' />
-        <TextField autoComplete="off" name='message' id='message' onChange={handleChange} label='Mensaje o consulta deseada' className='inputs' variant='standard' multiline rows={6} />
+        <input placeholder='Company' autoComplete="off" name='company' id='company' onChange={handleChange} type='text' label='Empresa (Opcional)' className='inputs'  />
+        <input placeholder='Message' autoComplete="off" name='message' id='message' onChange={handleChange} label='Mensaje o consulta deseada' className='inputs'  rows={6} />
         {error && error.message &&
           <p className='error'>{error.message}</p>
         }
-        <button onClick={onSubmit} className='button-principal  pointer'>Enviar</button>
+        <button onClick={onSubmit} className='button-principal hover pointer'>Enviar</button>
       </div>
     </>
   )

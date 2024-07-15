@@ -39,7 +39,7 @@ export const Header = () => {
             </div>
             {showMenu && <ul className={`links ${animatedLinks}`} >
                 {links && links.map(link =>(
-                     <LinkRouter to={`/${link.title.toLowerCase()}`} className="link  pointer" key={link.id}>{link.title}</LinkRouter>
+                     <LinkRouter smooth={true} duration={500} to={`/${link.title.toLowerCase()}`} className="link  pointer" key={link.id}>{link.title}</LinkRouter>
                 ))}
             </ul>}
         </nav>

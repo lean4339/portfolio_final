@@ -12,7 +12,7 @@ function App() {
   return (
     <>
     <Header />
-    <Container sx={{display:'flex', flexDirection:'column',  justifyContent:'center', flexWrap: 'wrap', overflow:'hidden', gap:10 }} fixed maxWidth='xl'>
+    <Container sx={{ display:'flex', flexDirection:'column',  justifyContent:'center', flexWrap: 'wrap' }} fixed maxWidth='xl'>
     <Main />
     <About />
     <Experience />

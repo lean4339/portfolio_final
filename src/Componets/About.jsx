@@ -4,20 +4,16 @@ export const About = () => {
         <>
         <Element name='/about'/>
         <main className='about-container' id="/about">
-            <div className='about-content-container'>
-                <h1 className="titulo-main">Un programador resiliente</h1>
-
-                <div className="experience-text-container">
-                <h3 className="subtitulo-main">Nacido en Buenos Aires y criado en el conurbano, soy un hombre de 35 años felizmente casado y muy familiero. A pesar de sufrir de TOC, TAG y epilepsia, nada me detiene en mi esfuerzo diario por ofrecer lo mejor en mi trabajo. Me encanta compartir momentos con mis seres queridos, pero mi verdadera pasión es la programación, especialmente en Linux.
-                    </h3>
-                    </div>
-
-                    <div className="experience-text-container">
-                    <h3 className="subtitulo-main">
-                    Desde hace tres años estoy en el mercado de la programación, disfrutando de la lógica y admirando cómo la web evoluciona constantemente en diseño y rendimiento. He trabajado en varias empresas y sigo comprometido con mi crecimiento profesional y personal, siempre buscando nuevos desafíos y soluciones innovadoras.
-                </h3>
-                </div>
-            </div>
+                <h1 className="titulo-main">Sobre mí</h1>
+                <p className="about-text-container">
+                    Soy un desarrollador web full stack, con experiencia en el desarrollo de aplicaciones web. 
+                    Me apasiona la tecnología y el desarrollo de software, siempre estoy en constante aprendizaje y 
+                    me encanta enfrentar nuevos desafíos. Soy una persona proactiva, responsable y con capacidad para 
+                    trabajar en equipo.
+                    Me gusta trabajar en proyectos que me permitan crecer profesionalmente y aportar valor a la empresa.
+                    Trabajé en proyectos de desarrollo de software en diferentes tecnologías como JavaScript, React y Node.
+                    Amo hacer paginas web y amaría hacer la tuya
+                </p>
         </main>
         </>
     )
