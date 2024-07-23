@@ -1,0 +1,26 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Primera línea -->
+  <line x1="10" y1="20" x2="190" y2="20" stroke="#333333" stroke-width="2"
+        stroke-dasharray="180" stroke-dashoffset="180">
+    <animate attributeName="stroke-dashoffset" from="180" to="0" dur="2s" fill="freeze" begin="0s" />
+    <animate attributeName="stroke" from="#007BFF" to="white" dur="1s" fill="freeze" begin="2s" />
+  </line>
+  <!-- Segunda línea -->
+  <line x1="10" y1="50" x2="190" y2="50" stroke="#333333" stroke-width="2"
+        stroke-dasharray="180" stroke-dashoffset="180">
+    <animate attributeName="stroke-dashoffset" from="180" to="0" dur="2s" fill="freeze" begin="1s" />
+    <animate attributeName="stroke" from="#007BFF" to="white" dur="1s" fill="freeze" begin="3s" />
+  </line>
+  <!-- Tercera línea -->
+  <line x1="10" y1="80" x2="190" y2="80" stroke="#333333" stroke-width="2"
+        stroke-dasharray="180" stroke-dashoffset="180">
+    <animate attributeName="stroke-dashoffset" from="180" to="0" dur="2s" fill="freeze" begin="2s" />
+    <animate attributeName="stroke" from="#007BFF" to="white" dur="1s" fill="freeze" begin="4s" />
+  </line>
+  <!-- Cuarta línea -->
+  <line x1="10" y1="110" x2="190" y2="110" stroke="#333333" stroke-width="2"
+        stroke-dasharray="180" stroke-dashoffset="180">
+    <animate attributeName="stroke-dashoffset" from="180" to="0" dur="2s" fill="freeze" begin="3s" />
+    <animate attributeName="stroke" from="#007BFF" to="white" dur="1s" fill="freeze" begin="5s" />
+  </line>
+</svg>
