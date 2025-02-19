@@ -10,7 +10,7 @@ export const Main = ({showMenu}) => {
             Llevá tu creatividad al siguiente nivel
           </h1>
           <h3 className={`${showMenu? 'black-text': 'subtitulo-main'}`}>
-            Explora nuevas posibilidades, transforma ideas en soluciones
+            Explora nuevas posibilidades, transforma ideas en soluciones <br/>
             innovadoras y crea impacto con cada proyecto que desarrolles.
           </h3>
         </div>

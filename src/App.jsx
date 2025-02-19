@@ -8,34 +8,32 @@ import { Experience } from './Componets/Experience'
 import { Services } from './Componets/Services'
 import Banner from './Componets/Banner'
 import { useState } from 'react'
-import image from './assets/banner2.webp';
-import image2 from './assets/codigo_banner.webp';
-import image3 from './assets/banner_servicios.webp';
-//import { Container } from '@mui/material'
+import { Container } from '@mui/material'
 function App() {
   const [showMenu, setShowMenu] = useState(false)
   return (
     <>
     <Header showMenu={showMenu} setShowMenu={setShowMenu}/>
-    {/* <Container
+    <Container
     sx={{ 
       position:'relative', 
       display:'flex', 
+      top: '10vh',
       flexDirection:'column',  
       justifyContent:'center', 
       flexWrap: 'wrap' }} 
-      fixed maxWidth='xl'> */}
+      fixed maxWidth='xxl'> 
     <Main showMenu={showMenu} />
     
-    <Banner image={image}/>
+    <Banner/>
     <About />
-    <Banner image={image2}/>
+    <Banner/>
     <Experience />
-    <Banner image={image3}/>
+    <Banner/>
     <Services />
     {/* <Contact /> */}
     <Conexion />
-    {/* </Container> */}
+    </Container> 
     </>
   )
 }
