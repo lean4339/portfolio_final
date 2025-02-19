@@ -1,15 +1,20 @@
-import { Element } from "react-scroll"
-
-export const Main = () => {
-    return (
-        <>
-        <Element name='/main'/>
-        <main className='main-container' id="/main">
-            <div className='main-content-container'>
-                <h3 className="subtitulo-main">Descubre el arte de crear soluciones</h3>
-                <h1 className="titulo-main">Buscá el próximo nivel</h1>
-            </div>
-        </main>
-        </>
-    )
-}
+import { Element } from "react-scroll";
+// eslint-disable-next-line react/prop-types
+export const Main = ({showMenu}) => {
+  return (
+    <>
+      <Element name="/main" />
+      <main className="main-container" id="/main">
+        <div className="main-content-container">
+          <h1 className={`${showMenu? 'black-text': 'titulo-main'}`}>
+            Llevá tu creatividad al siguiente nivel
+          </h1>
+          <h3 className={`${showMenu? 'black-text': 'subtitulo-main'}`}>
+            Explora nuevas posibilidades, transforma ideas en soluciones
+            innovadoras y crea impacto con cada proyecto que desarrolles.
+          </h3>
+        </div>
+      </main>
+    </>
+  );
+};

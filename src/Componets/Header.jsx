@@ -2,15 +2,15 @@ import { useState } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link as LinkRouter } from 'react-scroll/modules'
 import Code from '../assets/icon.png'
-export const Header = () => {
-    const [showMenu, setShowMenu] = useState(false)
+// eslint-disable-next-line react/prop-types
+export const Header = ({showMenu, setShowMenu}) => {
     const [animatedLinks, setAnimatedLinks] = useState('')
     const [animatedMenu, setAnimatedMenu] = useState(false)
     const links = [
         {id: 2, title: 'Sobre mí'},
         {id: 5, title: 'Experiencia'},
         {id: 1, title: 'Servicios'},
-        {id: 4, title: 'Contacto'},
+        //{id: 4, title: 'Contacto'},
     ]
     const handleShowMenu = () => {
         setShowMenu(!showMenu)
@@ -31,17 +31,20 @@ export const Header = () => {
             </ul>
         </nav>
 
-        <nav className='mobile'>
-            <div className="header-mobile">
-
+        <nav className='header-mobile'>
+            <div className="header">
+            <div className="mobile">
             <LinkRouter smooth={true} duration={500} to={'/main'} className="  pointer logo"><img src={Code} alt="code" /></LinkRouter>
             <div onClick={handleShowMenu} className="menuIcon  pointer"><MenuIcon/></div>
             </div>
             {showMenu && <ul className={`links ${animatedLinks}`} >
                 {links && links.map(link =>(
-                     <LinkRouter smooth={true} duration={500} to={`/${link.title.toLowerCase()}`} className="link  pointer" key={link.id}>{link.title}</LinkRouter>
+                    <LinkRouter
+                    smooth={false} duration={500} to={`/${link.title.toLowerCase()}`} 
+                    className="link  pointer" key={link.id}>{link.title}</LinkRouter>
                 ))}
             </ul>}
+                </div>
         </nav>
         </header>
     </div>        
